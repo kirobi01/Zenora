@@ -18,7 +18,7 @@ export function Privacy() {
             This marketing site uses no advertising trackers. If we add analytics later, we will update this notice. Hosting providers may process technical logs (IP address, user agent) as part of keeping the site available.
           </p>
           <p>
-            To access, correct, or delete information we hold about you from this site, email hello@zenoratech.co.ke. We will respond within a reasonable period.
+            To access, correct, or delete information we hold about you from this site, email info@zenoratech.co.ke. We will respond within a reasonable period.
           </p>
           <p>
             This notice was last updated in September 2026. It is written for a public website, not as legal advice for your jurisdiction.
@@ -50,7 +50,7 @@ export function Terms() {
           <p>
             The site is provided as-is. We will correct material errors when we learn of them. If something on a page conflicts with a signed contract, the contract wins.
           </p>
-          <p>Governing conversations about this site can be addressed to hello@zenoratech.co.ke.</p>
+          <p>Governing conversations about this site can be addressed to info@zenoratech.co.ke.</p>
           <Link to="/" className="inline-block text-sm">
             ← Home
           </Link>

@@ -45,8 +45,8 @@ export function Careers() {
           </div>
           <p className="mt-10 text-sm text-ink/55">
             Do not see yourself? Write anyway.{' '}
-            <a href="mailto:hello@zenoratech.co.ke" className="underline">
-              hello@zenoratech.co.ke
+            <a href="mailto:info@zenoratech.co.ke" className="underline">
+              info@zenoratech.co.ke
             </a>
           </p>
         </Container>

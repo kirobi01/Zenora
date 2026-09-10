@@ -25,7 +25,7 @@ The site ships with detailed, production-quality copy and stylised case studies.
 - `src/data/site.ts` — email, phone, office addresses, social links
 - Leadership names and portraits if they should match your real partners
 - Client names in `src/data/work.ts` if you have permission to name them
-- The contact form currently opens the visitor’s mail client to `hello@zenoratech.co.ke`
+- The contact form currently opens the visitor’s mail client to `info@zenoratech.co.ke`
 
 ## Deploy on Cloudflare (free)
 
