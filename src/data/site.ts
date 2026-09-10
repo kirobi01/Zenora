@@ -4,7 +4,8 @@ export const site = {
   tagline: 'Systems that endure. Software that compounds.',
   description:
     'We design, engineer, and implement the operational platforms ambitious organizations run on — ERPs, human resource systems, farmer platforms, applied AI, and digital products built for real-world conditions.',
-  email: 'hello@zenoratech.systems',
+  email: 'hello@zenoratech.co.ke',
+  url: 'https://zenoratech.co.ke',
   phone: '+254 700 000 000',
   offices: [
     {
