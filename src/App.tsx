@@ -34,6 +34,9 @@ export default function App() {
           <Route path="/work/atlas-b2b-commerce" element={<Navigate to="/work/criss-cross-fmcg" replace />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
           <Route path="/industries" element={<Industries />} />
+          <Route path="/industries/health" element={<Navigate to="/industries" replace />} />
+          <Route path="/industries/public-sector" element={<Navigate to="/industries" replace />} />
+          <Route path="/industries/education" element={<Navigate to="/industries" replace />} />
           <Route path="/industries/:slug" element={<IndustryDetail />} />
           <Route path="/process" element={<Process />} />
           <Route path="/insights" element={<Insights />} />

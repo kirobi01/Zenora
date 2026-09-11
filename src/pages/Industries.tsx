@@ -9,7 +9,7 @@ export function Industries() {
       <PageHero
         kicker="Industries"
         title="Sectors we have earned the right to talk about."
-        lede="Agriculture, manufacturing, people operations, health, government, trade, logistics, and education. We stay long enough to be useful."
+        lede="Agriculture, manufacturing, people operations, trade, and logistics. We stay long enough to be useful."
       />
       <section className="bg-paper py-24">
         <Container className="grid gap-6 md:grid-cols-2">

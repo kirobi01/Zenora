@@ -160,7 +160,7 @@ export const services: Service[] = [
     summary:
       'Bespoke platforms, portals, and internal tools engineered as long-lived products — not one-off project code.',
     description:
-      'When the market has no product that fits, we build one. Zenora engineers platforms with the discipline of a product company: domain modelling, automated tests, observability, and a roadmap the client can own. We work in finance, logistics, education, health, and the public sector — always with an eye on the operators who will live in the system after launch.',
+      'When the market has no product that fits, we build one. Zenora engineers platforms with the discipline of a product company: domain modelling, automated tests, observability, and a roadmap the client can own. We work in manufacturing, distribution, logistics, and agribusiness — always with an eye on the operators who will live in the system after launch.',
     image: '/images/work-logistics.jpg',
     outcomes: [
       'Platforms that survive leadership changes',
@@ -214,7 +214,7 @@ export const services: Service[] = [
       },
       {
         title: 'Portals & self-service',
-        body: 'Authenticated experiences for customers, farmers, patients, students, and partners.',
+        body: 'Authenticated experiences for customers, farmers, outlets, and partners.',
       },
       {
         title: 'Content operations',
@@ -230,7 +230,7 @@ export const services: Service[] = [
     summary:
       'Field, consumer, and workforce apps that stay useful when the network does not.',
     description:
-      'Our mobile work lives at the edge of the enterprise: agronomists, riders, nurses, sales reps, inspectors. We design offline-first data, conflict resolution, device constraints, and the unglamorous sync layer that makes a field day possible. Native, React Native, or PWA — chosen for the job, not the trend.',
+      'Our mobile work lives at the edge of the enterprise: agronomists, riders, sales reps, warehouse clerks, inspectors. We design offline-first data, conflict resolution, device constraints, and the unglamorous sync layer that makes a field day possible. Native, React Native, or PWA — chosen for the job, not the trend.',
     image: '/images/work-mobile.jpg',
     outcomes: [
       'Field teams working through outages',
@@ -263,10 +263,10 @@ export const services: Service[] = [
     name: 'Integration & digital transformation',
     eyebrow: 'The connective tissue',
     summary:
-      'Banks, ERPs, ministries, warehouses, and partners speaking one language — with change management that sticks.',
+      'Banks, ERPs, warehouses, and partners speaking one language — with change management that sticks.',
     description:
       'Transformation programmes die in the interfaces. We design event and API layers, master data, identity, and the operating cadence that keeps twenty systems from drifting. Programme management, vendor orchestration, and training sit beside the technical work. The ambition is not a slide titled “future state.” It is a Tuesday morning that is quieter than last year’s.',
-    image: '/images/work-health.jpg',
+    image: '/images/work-logistics.jpg',
     outcomes: [
       'Nightly reconciliations instead of monthly surprises',
       'Partner onboarding in days, not quarters',

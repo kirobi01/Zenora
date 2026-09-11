@@ -61,7 +61,7 @@ export function Home() {
               Software is easy to announce. Systems that operators will defend are harder — and that is the work.
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/65">
-              Zenora is a systems house. We build the ledgers, registries, and platforms that finance, people, farms, hospitals, and supply chains run on. Design is not a coat of paint. Implementation is not a warranty. Intelligence is not a demo.
+              Zenora is a systems house. We build the ledgers, registries, and platforms that finance, people, farms, and supply chains run on. Design is not a coat of paint. Implementation is not a warranty. Intelligence is not a demo.
             </p>
           </Reveal>
           <div className="mt-20 grid gap-px bg-navy/10 md:grid-cols-3">

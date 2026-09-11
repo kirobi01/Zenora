@@ -40,7 +40,7 @@ export const clients = [
 export const principles = [
   {
     title: 'Design for the field, not the demo.',
-    body: 'A farmer on a 2G handset, a store clerk at 6 a.m., a clinician on night shift — they are the real users. Interfaces, workflows, and infrastructure are judged there, not in a pitch deck.',
+    body: 'A farmer on a 2G handset, a store clerk at 6 a.m., a depot supervisor on the night load — they are the real users. Interfaces, workflows, and infrastructure are judged there, not in a pitch deck.',
   },
   {
     title: 'Implementation is the product.',

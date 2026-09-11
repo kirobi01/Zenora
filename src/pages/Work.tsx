@@ -8,7 +8,7 @@ export function Work() {
     <>
       <PageHero
         kicker="Work"
-        title="Case studies from plants, fields, hospitals, and headquarters."
+        title="Case studies from plants, depots, routes, and headquarters."
         lede="Implementations we can discuss. Where a board asked us not to name the organisation, we still describe how the operation actually ran."
       />
       <section className="bg-paper py-24">

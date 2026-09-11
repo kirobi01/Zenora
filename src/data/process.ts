@@ -22,7 +22,7 @@ export const processSteps = [
   {
     id: '05',
     name: 'Integrate the unglamorous edges',
-    body: 'Banks, statutory files, scales, biometric clocks, ministries, carriers. These are the product. We treat failure, retries, and reconciliation as first-class design.',
+    body: 'Banks, statutory files, scales, biometric clocks, carriers. These are the product. We treat failure, retries, and reconciliation as first-class design.',
   },
   {
     id: '06',
