@@ -4,7 +4,6 @@ import { caseStudies } from '../data/work'
 import { services } from '../data/services'
 import { industries } from '../data/industries'
 import { articles } from '../data/insights'
-import { roles } from '../data/careers'
 
 const titles: Record<string, string> = {
   '/': 'Zenora Technologies and Systems',
@@ -14,7 +13,6 @@ const titles: Record<string, string> = {
   '/industries': 'Industries — Zenora',
   '/process': 'Process — Zenora',
   '/insights': 'Insights — Zenora',
-  '/careers': 'Careers — Zenora',
   '/contact': 'Contact — Zenora',
   '/privacy': 'Privacy — Zenora',
   '/terms': 'Terms — Zenora',
@@ -41,9 +39,6 @@ export function usePageTitle() {
     } else if (part[0] === 'insights') {
       const item = articles.find((a) => a.slug === part[1])
       document.title = item ? `${item.title} — Zenora` : 'Insights — Zenora'
-    } else if (part[0] === 'careers') {
-      const item = roles.find((r) => r.slug === part[1])
-      document.title = item ? `${item.title} — Zenora` : 'Careers — Zenora'
     } else {
       document.title = 'Zenora Technologies and Systems'
     }

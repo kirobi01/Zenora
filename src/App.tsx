@@ -11,8 +11,6 @@ import { IndustryDetail } from './pages/IndustryDetail'
 import { Process } from './pages/Process'
 import { Insights } from './pages/Insights'
 import { InsightArticle } from './pages/InsightArticle'
-import { Careers } from './pages/Careers'
-import { CareerDetail } from './pages/CareerDetail'
 import { Contact } from './pages/Contact'
 import { Privacy, Terms } from './pages/Legal'
 import { NotFound } from './pages/NotFound'
@@ -41,8 +39,8 @@ export default function App() {
           <Route path="/process" element={<Process />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:slug" element={<InsightArticle />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/careers/:slug" element={<CareerDetail />} />
+          <Route path="/careers" element={<Navigate to="/" replace />} />
+          <Route path="/careers/:slug" element={<Navigate to="/" replace />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />

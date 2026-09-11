@@ -21,7 +21,6 @@ export const nav = [
   { label: 'Process', href: '/process' },
   { label: 'About', href: '/about' },
   { label: 'Insights', href: '/insights' },
-  { label: 'Careers', href: '/careers' },
 ]
 
 export const stats = [
