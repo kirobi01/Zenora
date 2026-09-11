@@ -64,7 +64,7 @@ export function Home() {
               Zenora is a systems house. We build the ledgers, registries, and platforms that finance, people, farms, hospitals, and supply chains run on. Design is not a coat of paint. Implementation is not a warranty. Intelligence is not a demo.
             </p>
           </Reveal>
-          <div className="mt-20 grid gap-px bg-navy/10 md:grid-cols-4">
+          <div className="mt-20 grid gap-px bg-navy/10 md:grid-cols-3">
             {stats.map((s) => (
               <div key={s.label} className="bg-paper px-6 py-10">
                 <p className="display text-4xl text-navy md:text-5xl">{s.value}</p>

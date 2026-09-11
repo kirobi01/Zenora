@@ -22,7 +22,7 @@ export function Careers() {
               Small senior teams. Named clients. Time in the field. We write, we review, we disagree in private and show up aligned in the room. Compensation is competitive. Titles are honest. We hire for taste and stamina.
             </p>
             <ul className="mt-8 space-y-3 text-sm text-ink/75">
-              <li>— Studios in Nairobi and Kigali; remote specialists welcome</li>
+              <li>— Remote-friendly; we hire for the work, not a postcode</li>
               <li>— Health cover, learning budget, and real time off after cutovers</li>
               <li>— No bench theatre: you will be on a system that matters</li>
             </ul>

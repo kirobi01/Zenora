@@ -34,9 +34,9 @@ export const leaders: Leader[] = [
 
 export const testimonials = [
   {
-    text: 'The ticket at the scale is now the same record I use to pay. Members stopped arguing about kilos we could not prove.',
-    person: 'General Manager',
-    role: 'Cereals growers’ cooperative union — name withheld',
+    text: 'The reps use it because it helps them sell. Finance uses it because the delivery matches the invoice. That is the only test that mattered.',
+    person: 'Commercial lead',
+    role: 'Criss Cross FMCG',
   },
   {
     text: 'They did not sell us a dream of digital transformation. They stood next to the shift supervisor until the screen matched the line.',

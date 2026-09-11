@@ -7,23 +7,6 @@ export const site = {
   email: 'info@zenoratech.co.ke',
   url: 'https://zenoratech.co.ke',
   phone: '+254 700 000 000',
-  offices: [
-    {
-      city: 'Nairobi',
-      role: 'Headquarters',
-      address: 'Westlands, Nairobi, Kenya',
-    },
-    {
-      city: 'Kigali',
-      role: 'Delivery studio',
-      address: 'Nyarugenge, Kigali, Rwanda',
-    },
-    {
-      city: 'Remote',
-      role: 'Specialist network',
-      address: 'East Africa, Middle East & Europe',
-    },
-  ],
   social: {
     linkedin: 'https://www.linkedin.com',
     x: 'https://x.com',
@@ -42,21 +25,16 @@ export const nav = [
 ]
 
 export const stats = [
-  { value: '80+', label: 'Systems in production' },
-  { value: '4.2M', label: 'People reached by our platforms' },
-  { value: '98%', label: 'Go-live rate on implementations' },
-  { value: '12', label: 'Countries where we have shipped' },
+  { value: '50+', label: 'Systems in production' },
+  { value: '500k', label: 'People reached by our platforms' },
+  { value: '3', label: 'Countries where we have shipped' },
 ]
 
 export const clients = [
-  'Farmer cooperative unions',
   'Manufacturing groups',
-  'Hospital networks',
-  'Ministries & counties',
-  'Regional banks',
   'Logistics operators',
-  'Universities',
   'FMCG distributors',
+  'Cooperative unions',
 ]
 
 export const principles = [

@@ -17,17 +17,11 @@ export function Contact() {
             <ContactForm />
           </div>
           <div className="md:col-span-5 md:col-start-8">
-            <SectionKicker>Studios</SectionKicker>
-            <ul className="space-y-8">
-              {site.offices.map((o) => (
-                <li key={o.city}>
-                  <p className="text-lg font-semibold">{o.city}</p>
-                  <p className="kicker mt-1 text-teal-dim">{o.role}</p>
-                  <p className="mt-2 text-sm text-ink/60">{o.address}</p>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-12 border-t border-navy/10 pt-8">
+            <SectionKicker>Write to us</SectionKicker>
+            <p className="text-sm leading-relaxed text-ink/65">
+              A brief to {site.email} is enough. We reply within two working days.
+            </p>
+            <div className="mt-8">
               <p className="text-sm">
                 <a href={`mailto:${site.email}`} className="underline">
                   {site.email}

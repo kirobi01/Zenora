@@ -27,10 +27,11 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/work" element={<Work />} />
-          <Route
-            path="/work/harvestlink-cooperative"
-            element={<Navigate to="/work/cereals-cooperative-union" replace />}
-          />
+          <Route path="/work/harvestlink-cooperative" element={<Navigate to="/work" replace />} />
+          <Route path="/work/cereals-cooperative-union" element={<Navigate to="/work" replace />} />
+          <Route path="/work/countyfarm-public-extension" element={<Navigate to="/work" replace />} />
+          <Route path="/work/helios-hospital-system" element={<Navigate to="/work" replace />} />
+          <Route path="/work/atlas-b2b-commerce" element={<Navigate to="/work/criss-cross-fmcg" replace />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:slug" element={<IndustryDetail />} />

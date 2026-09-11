@@ -21,44 +21,6 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: 'cereals-cooperative-union',
-    title: 'Weighbridge tickets that the treasurer can pay against',
-    client: 'Cereals growers’ cooperative union',
-    sector: 'Cooperatives',
-    year: '2023–24',
-    location: 'Rift Valley, Kenya',
-    confidential: true,
-    services: ['AgriTech & farmers systems', 'Mobile applications', 'Custom software'],
-    summary:
-      'A union of 36 primary societies: one member register, intake at 11 collection centres, and a second-payment run that starts from the weighbridge ticket — not from a spreadsheet rebuilt every season.',
-    challenge:
-      'The union is a union in law and a stack of exercise books in practice. Each affiliated farmers’ cooperative society kept its own member numbers. The same household appeared three times — once at the society, once on the input revolving-fund list, once on a photocopied ID sheet in the accountant’s cabinet.\n\nIntake was a mechanical scale, a carbon receipt, and a WhatsApp photo of the day’s tally sent to headquarters. Second payment — the money members actually wait for after the miller or offtaker settles — was an Excel file that took the treasurer eleven nights. Kilos on the receipt and kilos on the payment list did not match often enough that queues turned into arguments. The board did not ask for a marketplace or an “agri platform.” They asked for the weighbridge ticket, the member number, and the second-payment file to be the same fact.',
-    approach:
-      'We sat on the intake bench for the first two buying weeks before we designed screens. The unit of work is not “the farmer in an app.” It is the society clerk, the scale, the sack, and the union accountant. First we built a member register that respects how cooperatives actually identify people: society code, member number, national ID where they consented, and a photo of the share certificate when the ID was missing. Duplicates were resolved in a hall with society secretaries, not by an algorithm alone.\n\nIntake followed: the clerk enters the ticket on a phone that works when the network bar disappears, writes the same serial on the paper carbon, and the lot is closed at end of day against the scale. Members check deliveries and input balances on USSD — the channel they already use for airtime. Second payment is a file the accountant can take to the bank, with recoveries for the input fund already netted. We trained clerks at the centres, not in a hotel workshop, and stood through the first two payment runs.',
-    architecture: [
-      'Member register keyed by society + member number, with ID de-duplication',
-      'Weighbridge ticket as the source document for the lot and the payment',
-      'Offline intake on the clerk’s phone, paper carbon kept as the legal copy',
-      'USSD for delivery history, input balance, and payment notices',
-      'Second-payment and input-recovery export the accountant already knew how to bank',
-    ],
-    outcomes: [
-      { value: '36', label: 'Primary societies on one member register' },
-      { value: '11', label: 'Collection centres issuing the same ticket series' },
-      { value: '9,400', label: 'Unique members after de-duplication' },
-      { value: '2', label: 'Seasons of second payment run from the system' },
-    ],
-    quote: {
-      text: 'The ticket at the scale is now the same record I use to pay. Members stopped arguing about kilos we could not prove.',
-      person: 'General Manager',
-      role: 'Cereals growers’ cooperative union — name withheld',
-    },
-    image: '/images/work-coop-intake.jpg',
-    imageAlt: 'Maize on a mechanical scale beside a handwritten cooperative receipt book',
-    tone: 'documentary',
-    featured: true,
-  },
-  {
     slug: 'meridian-manufacturing-erp',
     title: 'One backbone for a multi-plant manufacturer',
     client: 'Meridian Industrials',
@@ -156,88 +118,39 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
   },
   {
-    slug: 'countyfarm-public-extension',
-    title: 'A county that put extension back in the field',
-    client: 'County Department of Agriculture',
-    sector: 'Public sector',
-    year: '2023',
-    services: ['AgriTech & farmers systems', 'Web design', 'Applied AI'],
+    slug: 'criss-cross-fmcg',
+    title: 'Route-to-market that van sales and finance can both trust',
+    client: 'Criss Cross FMCG',
+    sector: 'FMCG / Distribution',
+    year: '2024–25',
+    location: 'Kenya',
+    services: ['Custom software', 'Mobile applications', 'ERP integration'],
     summary:
-      'Farmer registration, e-voucher inputs, and an extension officer platform for a county programme serving 62,000 households.',
+      'Ordering, credit, and proof of delivery for Criss Cross — built around how the vans already sell, not a portal nobody would open.',
     challenge:
-      'Input subsidies were a political and operational risk. Ghost farmers, double registration, and agrodealers who ran out of stock on day two. Extension officers spent more time in the office compiling reports than on farms. The county needed integrity, not another dashboard for the CEC.',
+      'Outlets ordered on WhatsApp. Credit lived with a few people who knew the trade. Stock on the van and stock in the warehouse told different stories by mid-afternoon. A previous “digital channel” had launched as a brochure and died. Leadership wanted one picture: what left the depot, what the outlet took, what was still on credit, and what the next load should be.',
     approach:
-      'Registration used field biometrics and plot photos, with de-duplication against national IDs where consented. E-vouchers were redeemable only at contracted agrodealers with live stock. Officer apps scheduled visits, captured advisory, and — later — surfaced pest risk from a seasonal model. A public transparency portal published aggregated redemption, not personal data. We trained ward-level champions and sat in the war-room through the first distribution window.',
+      'We rode routes before we drew screens. The first slice was outlet identity, live price and stock from the books they already close, and an order the rep can finish in a shop doorway. Credit limits and ageing sat next to the SKU list — not in a finance folder. Proof of delivery and returns closed the loop the same day. Launch was territory by territory so a bad week in one region could not stain the brand.',
     architecture: [
-      'Farmer and household registry with de-duplication',
-      'E-voucher and agrodealer settlement rails',
-      'Officer app with offline visit capture',
-      'Seasonal advisory and outbreak alerting',
-      'Open statistics portal for programme integrity',
+      'Outlet master tied to the existing customer and credit records',
+      'Live catalogue, price, and available-to-promise from the operational books',
+      'Rep app and WhatsApp ordering on the same order object',
+      'Proof of delivery, returns, and van stock',
+      'Territory view for sales and a close file finance already knew how to post',
     ],
     outcomes: [
-      { value: '62k', label: 'Households registered' },
-      { value: '28%', label: 'Fewer duplicate claims vs prior season' },
-      { value: '2.4×', label: 'Farm visits logged per officer' },
-      { value: '14 days', label: 'Agrodealer settlement, down from 6 weeks' },
+      { value: '1', label: 'Order, credit, and delivery on the same record' },
+      { value: 'By route', label: 'Rollout — not a national big-bang' },
+      { value: 'Same day', label: 'Proof of delivery back to the depot' },
+      { value: 'Live', label: 'Price and stock the van can sell against' },
     ],
-    image: '/images/industry-public.jpg',
-  },
-  {
-    slug: 'helios-hospital-system',
-    title: 'Clinical and commercial truth in one hospital network',
-    client: 'Helios Medical Group',
-    sector: 'Health',
-    year: '2024',
-    services: ['ERP design & implementation', 'Custom software', 'Integration'],
-    summary:
-      'A hospital information and ERP spine linking encounters, pharmacy, labs, billing, and group finance across six facilities.',
-    challenge:
-      'Clinical systems and the accounts office disagreed about what happened yesterday. Pharmacy stock was a nightly argument. Insurance claims bounced. Patients queued twice. A best-of-breed stack had produced best-of-breed silos.',
-    approach:
-      'We defined a canonical encounter and a chargeable event before touching UI. Pharmacy and lab were integrated as sources of truth, not as islands. Billing rules for cash, corporate, and insurance were encoded with the revenue team. Clinicians got faster order entry; finance got a close they could defend. Change management included night-shift super-users, because that is when hospitals are honest.',
-    architecture: [
-      'Encounter-centric clinical record',
-      'Pharmacy, lab, and radiology orders with stock impact',
-      'Billing, claims, and cash office on one ledger',
-      'Group finance consolidation',
-      'HL7/FHIR-style interfaces where partners required them',
-    ],
-    outcomes: [
-      { value: '6', label: 'Facilities on one operational spine' },
-      { value: '19%', label: 'Reduction in claim rejections' },
-      { value: '35 min', label: 'Shorter median pharmacy wait' },
-      { value: '8 days', label: 'Revenue close, down from 3 weeks' },
-    ],
-    image: '/images/work-health.jpg',
-  },
-  {
-    slug: 'atlas-b2b-commerce',
-    title: 'A distributor’s digital storefront that sales actually uses',
-    client: 'Atlas FMCG',
-    sector: 'Distribution',
-    year: '2025',
-    services: ['Web design & digital experience', 'Mobile applications', 'ERP integration'],
-    summary:
-      'B2B ordering, credit visibility, and route-to-market for 4,000 retail outlets — designed with van sales, not against them.',
-    challenge:
-      'The previous portal was a brochure. Outlet owners ordered on WhatsApp. Sales reps feared anything that made their relationships transparent. Credit limits lived in a finance manager’s head. Atlas needed a channel that respected the van-sale motion while giving finance a spine.',
-    approach:
-      'We rode routes for two weeks. The product is a WhatsApp-class ordering experience with ERP pricing, available-to-promise, and credit in the same glance. Reps got a route app that helps them sell, not a surveillance tool. Design was restrained, fast, and in the languages outlets actually speak. Launch was by territory, with incentives aligned to digital order share.',
-    architecture: [
-      'Headless catalogue on live ERP pricing and stock',
-      'Outlet identity, credit, and promotions engine',
-      'WhatsApp ordering plus PWA and rep app',
-      'Proof of delivery and returns',
-      'Territory analytics for sales leadership',
-    ],
-    outcomes: [
-      { value: '4,000', label: 'Outlets enabled' },
-      { value: '38%', label: 'Orders now digital in live territories' },
-      { value: '17%', label: 'Drop in failed deliveries' },
-      { value: '2.1×', label: 'Rep calls converted to orders' },
-    ],
+    quote: {
+      text: 'The reps use it because it helps them sell. Finance uses it because the delivery matches the invoice. That is the only test that mattered.',
+      person: 'Commercial lead',
+      role: 'Criss Cross FMCG',
+    },
     image: '/images/work-web.jpg',
+    featured: true,
   },
   {
     slug: 'northstar-control-tower',

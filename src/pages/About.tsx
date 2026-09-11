@@ -28,7 +28,7 @@ export function About() {
                 Our partners came out of ERP programmes that stalled, farmer platforms that died after the launch video, HR portals nobody opened, and AI pilots that never met a clerk. The pattern was always the same: design without operations, operations without a system of record, intelligence without governance.
               </p>
               <p>
-                Zenora is the house we wished had been in the room. Headquartered in Nairobi, with a studio in Kigali and a specialist network across East Africa, the Middle East, and Europe, we take briefs that mix public duty and private P&L — cooperatives and conglomerates, hospitals and ministries, plants and ports.
+                Zenora is the house we wished had been in the room. We take briefs that mix private P&amp;L and operational duty — manufacturers, distributors, logistics operators, and cooperative unions — and we stay until the people who run the Tuesday can run the system.
               </p>
               <p>
                 We are not a staffing firm. We are not a slide factory. We put named people on a named system until the night shift can run it.
@@ -74,7 +74,7 @@ export function About() {
       </section>
 
       <section className="bg-foam py-20">
-        <Container className="grid gap-px bg-navy/10 md:grid-cols-4">
+        <Container className="grid gap-px bg-navy/10 md:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="bg-foam px-6 py-10">
               <p className="display text-4xl">{s.value}</p>

@@ -13,18 +13,18 @@ export const industries: Industry[] = [
     slug: 'agriculture',
     name: 'Agriculture & agribusiness',
     summary:
-      'Farmer cooperative unions, collection centres, and last-mile intake — software that matches how societies already keep members and kilos.',
-    body: 'We work with primary societies, unions, counties, input companies, and processors. The work is unglamorous on purpose: member numbers, weighbridge tickets, lots, second payment, and the input revolving fund. If a clerk at the collection centre cannot finish a ticket when the network is down, the system is not finished. Dashboards come after the receipt is trusted.',
+      'Cooperative unions and agribusiness operations — member records, produce, and money on one spine.',
+    body: 'We work with cooperative unions and agribusiness operators when the books and the field no longer agree. The work is operational: membership, lots, payments, and the systems people already use on a buying day. Dashboards come after the record is trusted.',
     image: '/images/industry-agriculture.jpg',
     systems: [
       'Member & society registers',
-      'Weighbridge & intake tickets',
-      'Second payment & recoveries',
+      'Produce intake & lots',
+      'Payments & recoveries',
       'Input revolving funds',
       'USSD member self-service',
       'Union accounting interfaces',
     ],
-    workSlugs: ['cereals-cooperative-union', 'countyfarm-public-extension'],
+    workSlugs: [],
   },
   {
     slug: 'manufacturing',
@@ -51,7 +51,7 @@ export const industries: Industry[] = [
     body: 'Hospitals are 24-hour operations with no patience for software that was designed at lunchtime. We connect encounters, orders, stock, and revenue, and we train the night shift. Claims, cash, and corporate accounts are encoded with the people who fight denials. Privacy, audit, and uptime are design constraints, not compliance theatre.',
     image: '/images/industry-health.jpg',
     systems: ['Hospital information', 'Pharmacy & lab', 'Billing & claims', 'ERP', 'Referral networks', 'Patient portals'],
-    workSlugs: ['helios-hospital-system'],
+    workSlugs: [],
   },
   {
     slug: 'public-sector',
@@ -60,7 +60,7 @@ export const industries: Industry[] = [
     body: 'Public systems fail when they are built for the launch event. We design for registration integrity, grievance redress, partner reporting, and the unfashionable work of master data. Transparency portals publish what should be public. Personal data stays where the law says it should. We are comfortable in steering committees and in ward offices.',
     image: '/images/industry-public.jpg',
     systems: ['Registries', 'Subsidy & grants', 'Case management', 'Open statistics', 'GIS', 'Partner reporting'],
-    workSlugs: ['countyfarm-public-extension'],
+    workSlugs: [],
   },
   {
     slug: 'finance-logistics',
@@ -69,7 +69,7 @@ export const industries: Industry[] = [
     body: 'Banks, 3PLs, distributors, and trading houses live on documents and time. We build the spines that match invoices to reality, follow a container inland, and show a credit officer the same story the warehouse sees. Applied AI earns its place in AP, KYC, and demand — always with an exception queue and an audit trail.',
     image: '/images/industry-finance.jpg',
     systems: ['Trade documents', 'Control towers', 'B2B commerce', 'Credit & collections', 'KYC intelligence', 'Treasury visibility'],
-    workSlugs: ['lumen-document-intelligence', 'northstar-control-tower', 'atlas-b2b-commerce'],
+    workSlugs: ['lumen-document-intelligence', 'northstar-control-tower', 'criss-cross-fmcg'],
   },
   {
     slug: 'education',

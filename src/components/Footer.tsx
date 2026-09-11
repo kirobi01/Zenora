@@ -42,7 +42,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-5">
             <p className="kicker text-teal">Practices</p>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               {services.slice(0, 6).map((s) => (
@@ -50,18 +50,6 @@ export function Footer() {
                   <Link to={`/services/${s.slug}`} className="hover:text-white">
                     {s.name}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="md:col-span-2">
-            <p className="kicker text-teal">Studios</p>
-            <ul className="mt-5 space-y-5 text-sm text-white/70">
-              {site.offices.map((o) => (
-                <li key={o.city}>
-                  <p className="text-white">{o.city}</p>
-                  <p className="mt-1 text-xs text-white/45">{o.role}</p>
-                  <p className="mt-1 text-xs">{o.address}</p>
                 </li>
               ))}
             </ul>
